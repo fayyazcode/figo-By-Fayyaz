@@ -1,23 +1,33 @@
 @font-face {
     font-family: "brandon";
-    src: url(../fonts/HVD\ Fonts\ -\ BrandonText-Regular.otf);
+    src: url("../fonts/HVD\ Fonts\ -\ BrandonText-Regular.otf");
 }
 body{
     background-color: rgb(255, 251, 251) !important;
 }
+
+/* modal added on sel*/
+
 .navbar-expand-sm .navbar-collapse {
     justify-content: flex-end !important;
     /* padding: 0 100px; */
 }
+.signin{
+    outline: none;
+    background-color: rgb(248, 248, 248);
+    border: none;
+    color: rgba(175, 175, 175, 0.924);
+}
+.navbar-nav a{
+    background-color: rgb(248, 248, 248);
+    border: none;
+    color: rgba(175, 175, 175, 0.924);
+    margin:0 2px;
+    border-radius:8px ;
+}
 
 
-.container-fluid{
-    padding: 0 05% !important;
-}
-.fixed-top{
-    padding: 10px 05% !important;
-    background-color: rgb(255, 251, 251);
-}
+
 .wel-img{
     width: 100%;
     border-radius: 15px;
@@ -75,7 +85,6 @@ body{
 }
 .card{
    align-items: center;
-   /* height: 250px; */
    background-color:rgb(243, 242, 242) !important ;
    margin-bottom: 10px;
 }
@@ -85,12 +94,10 @@ body{
     background-color:rgb(255, 251, 251);
     margin-bottom: 10px;
     position: relative;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
     min-width: 0;
-    word-wrap: break-word;
+    
  }
  .card-2{
     align-items: center;
@@ -157,7 +164,7 @@ body{
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     min-height: 0.1px;
-    /* padding: 1.25rem; */
+
 }
 .bur{
     margin-top: 10px;
@@ -169,13 +176,13 @@ body{
 }
 .card-img-top-1{
     width: 100%;
-    /* margin: 10px; */
+
 }
 .card-img-top-2{
     width: 100%;
     border-radius: 10px;
     margin-bottom: 05px;
-    /* margin: 10px; */
+
 }
 .card-title {
     text-align: center !important;
@@ -276,5 +283,24 @@ body{
 .footer-link:hover{
     text-decoration: none;
     color: black;
+}
+.go-top{
+
+
+
+}
+.gogo{
+position: relative;    
+top: 45%;
+text-align: center;
+right: 0px;
+position:fixed;
+right: 4px;
+bottom: 45%;
+background-color: rgba(7, 7, 7, 0.075);
+width: 25px;
+height: 35px;
+border-radius: 50% 0 0 50% ;
+color: white;
 }
 

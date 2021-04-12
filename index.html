@@ -7,15 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figo </title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    
 </head>
 
 <body>
     <div class="container-fluid">
+        
+            <a href="#" class="gogo">	
+                &#9650</a>
+       
         <div class="header">
-            <nav class="navbar navbar-expand-sm navbar-light fixed-top ">
+            <nav class="navbar navbar-expand-sm navbar-light  ">
                 <a class="navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,10 +30,66 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                        <a class="nav-link" href="#">Menu</a>
-                        <a class="nav-link" href="#">Service</a>
-                        <a class="nav-link" href="#">Sign In</a>
-                        <a class="nav-link" href="#"><img src="images/cart.svg" alt=""></a>
+                        <a class="nav-link" href="#menu">Menu</a>
+                        <a class="nav-link" href="#service">Service</a>
+                        <a class="nav-link" href="#">
+                            <div class="container">
+
+                                <!-- Trigger the modal with a button -->
+                                <button type="button" class="signin " data-toggle="modal"
+                                    data-target="#myModal">Signin</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+
+                                            <div class="modal-body">
+                                                <div class="olx-login">
+                                                    <div class="topp">
+                                                        <div class="imgg">
+                                                            <img src="entry.webp" alt="">
+                                                        </div>
+                                                        <div class="img-text">
+                                                            <p>Help Make OlX safer place to buy and sell</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="buttons">
+                                                        <div><button><i class="fa fa-phone" aria-hidden="true"></i>
+                                                                Continue with
+                                                                Phone</button></div>
+                                                        <div><button><i class="fab fa-facebook" aria-hidden="true"></i>
+                                                                Continue
+                                                                with Facebook</button></div>
+                                                        <div><button><i class="fab fa-google" aria-hidden="true"></i>
+                                                                Continue with
+                                                                Google</button></div>
+                                                        <div><button> <i class="far fa-envelope-open"
+                                                                    aria-hidden="true"></i>Continue with Email</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="login-bot">
+                                                        <h4>We won't share your personal details with anyone</h4>
+                                                        <p>If you continue, you are accepting <span>OLX Terms and
+                                                                Conditions and
+                                                                Privacy Policy</span></p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a class="nav-link" href="#"><i class="fal fa-shopping-bag"><sup
+                                    style="color: red;">*</sup></i></a>
                     </div>
                 </div>
             </nav>
@@ -48,7 +110,7 @@
                     <img class="wel-img" src="images/2.svg" alt="chef">
                 </div>
             </div>
-            
+
             <div class="row my-col-1">
                 <div class="wel-img-div col-12 col-lg-6 col-md-6 col-sm-12">
                     <img class="wel-img" src="images/7f3d864451aa9cbe1c95c76fd9f59540.png" alt="chef">
@@ -99,7 +161,7 @@
                     </div>
                 </div>
             </div>
-            <div class="my-col-3 row">
+            <div class="my-col-3 row " id="menu">
                 <div class="my-col-2 col-12 col-lg-12 col-md-12 col-sm-12">
                     <h4 class="head-wel-1">Browse</h4>
                 </div>
@@ -110,8 +172,9 @@
             <div class="row my-col-1">
                 <div class="col-3">
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link active" id="v-pills-breakfast-tab" data-toggle="pill" href="#v-pills-breakfast"
-                            role="tab" aria-controls="v-pills-breakfast" aria-selected="true">Breakfast</a>
+                        <a class="nav-link active" id="v-pills-breakfast-tab" data-toggle="pill"
+                            href="#v-pills-breakfast" role="tab" aria-controls="v-pills-breakfast"
+                            aria-selected="true">Breakfast</a>
                         <a class="nav-link" id="v-pills-lunch-tab" data-toggle="pill" href="#v-pills-lunch" role="tab"
                             aria-controls="v-pills-lunch" aria-selected="false">Lunch</a>
                         <a class="nav-link" id="v-pills-dinner-tab" data-toggle="pill" href="#v-pills-dinner" role="tab"
@@ -152,7 +215,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-lunch" role="tabpanel" aria-labelledby="v-pills-lunch-tab">
+                        <div class="tab-pane fade" id="v-pills-lunch" role="tabpanel"
+                            aria-labelledby="v-pills-lunch-tab">
                             <div class="row justify-content-between">
                                 <div class="col-12 col-sm-12 col-md-5 col-lg-3 card-1">
                                     <img src="images/food4.png" class="card-img-top-1" alt="menu">
@@ -177,7 +241,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-dinner" role="tabpanel" aria-labelledby="v-pills-dinner-tab">
+                        <div class="tab-pane fade" id="v-pills-dinner" role="tabpanel"
+                            aria-labelledby="v-pills-dinner-tab">
                             <div class="row justify-content-between">
                                 <div class="col-12 col-sm-12 col-md-5 col-lg-3 card-1">
                                     <img src="images/food1.png" class="card-img-top-1" alt="menu">
@@ -201,9 +266,10 @@
                                     </div>
                                 </div>
                             </div>
-    
+
                         </div>
-                        <div class="tab-pane fade" id="v-pills-desert" role="tabpanel" aria-labelledby="v-pills-desert-tab">
+                        <div class="tab-pane fade" id="v-pills-desert" role="tabpanel"
+                            aria-labelledby="v-pills-desert-tab">
                             <div class="row justify-content-between">
                                 <div class="col-12 col-sm-12 col-md-5 col-lg-3 card-1">
                                     <img src="images/food2.png" class="card-img-top-1" alt="menu">
@@ -228,7 +294,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-soups" role="tabpanel" aria-labelledby="v-pills-soups-tab">
+                        <div class="tab-pane fade" id="v-pills-soups" role="tabpanel"
+                            aria-labelledby="v-pills-soups-tab">
                             <div class="row justify-content-between">
                                 <div class="col-12 col-sm-12 col-md-5 col-lg-3 card-1">
                                     <img src="images/food4.png" class="card-img-top-1" alt="menu">
@@ -253,7 +320,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-drinks" role="tabpanel" aria-labelledby="v-pills-drinks-tab">
+                        <div class="tab-pane fade" id="v-pills-drinks" role="tabpanel"
+                            aria-labelledby="v-pills-drinks-tab">
                             <div class="row justify-content-between">
                                 <div class="col-12 col-sm-12 col-md-5 col-lg-3 card-1">
                                     <img src="images/food2.png" class="card-img-top-1" alt="menu">
@@ -310,7 +378,8 @@
                     <img src="images/1.jpg" class="card-img-top-2" alt="menu">
                     <div class="card-body-1">
                         <h5 class="card-title-2">Spain Appetizer</h5>
-                        <p class="card-text-2">Etiam feugiat eleifend est, odio tempor vitaeVivamus maximus scelerisque</p>
+                        <p class="card-text-2">Etiam feugiat eleifend est, odio tempor vitaeVivamus maximus scelerisque
+                        </p>
                         <a href="" class="read-more">Read More</a>
                     </div>
                 </div>
@@ -318,7 +387,8 @@
                     <img src="images/2.jpg" class="card-img-top-2" alt="menu">
                     <div class="card-body-1">
                         <h5 class="card-title-2">Wine and Cheese</h5>
-                        <p class="card-text-2">Etiam feugiat eleifend est, odio tempor vitaeVivamus maximus scelerisque</p>
+                        <p class="card-text-2">Etiam feugiat eleifend est, odio tempor vitaeVivamus maximus scelerisque
+                        </p>
                         <a href="" class="read-more">Read More</a>
                     </div>
                 </div>
@@ -326,11 +396,12 @@
                     <img src="images/3.jpg" class="card-img-top-2" alt="menu">
                     <div class="card-body-1">
                         <h5 class="card-title-2">Cup of Coffee</h5>
-                        <p class="card-text-2">Etiam feugiat eleifend est, odio tempor vitaeVivamus maximus scelerisque</p>
+                        <p class="card-text-2">Etiam feugiat eleifend est, odio tempor vitaeVivamus maximus scelerisque
+                        </p>
                         <a href="" class="read-more">Read More</a>
                     </div>
                 </div>
-    
+
             </div>
             <div class="row">
                 <div class="my-col-2 col-12 col-lg-12 col-md-12 col-sm-12">
@@ -351,7 +422,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-div row">
+        <div class="footer-div row" id="service">
             <div class="col-lg-3 col-md-3 col-sm-6 col-12">
                 <div class="footer-logo-div">
                     <img src="images/logo.svg" class="footer-logo" alt="logo">
